@@ -1,0 +1,10 @@
+<xml version="1.0" encoding="utf-8">
+    <book>
+        <title>书的标题</title>
+        <price>2.5</price>
+        <description>书的表述</description>
+        <comment>注意，上面除了第一行的xml标签之外，其他的标签都是开发人员定义的，指需要标签成对闭合，如果不闭合就报错<comment>
+    </book>
+
+    <goods price="2.5" description="书的表述" comment="属性都是自己编的，但也合法，比html更灵活">书的标题</good>
+</xml>
