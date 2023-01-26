@@ -31,6 +31,14 @@ form标签属性：
 - 单行数字、日期、时间、日期时间框：input type="balabala"
 - 密码框：input type="password"
 - 隐藏输入框：input hidden，作用是附带一些默认数据提交给服务端，但是不希望用户看到
+- 单选：input type="radio"
+- 多选：input type="checkbox"
+- 下拉框：input type="select" + option value="A"
+- 文件：input type="file"
+- 多行文本：textarea rows= cols=
+- 普通按钮：input type="button" or button
+- 提交按钮：input type="submit"
+- 重置按钮：input type="reset"
 
 表单项的常用属性：
 - * name：表示当前表单项的变量名，用于提供服务端获取本次表单提交的数据项
