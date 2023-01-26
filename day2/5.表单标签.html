@@ -5,13 +5,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://httpbin.org/get" method="get" enctype="multipart/form-data">
+    <form action="http://httpbin.org/post" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="hide" value="1.0">
+
+        <br>
         <label>账号：
-            <input type="text" name="username" value="默认值" placeholder="请输入3-16位的字符作为账号">
+            <input type="text" name="username" value="root" disabled placeholder="请输入3-16位的字符作为账号">
         </label>
         <br>
         <label>密码：
-            <input type="password" name="password" value="" placeholder="请输入密码">
+            <input type="password" name="password" value="" maxlength="16" placeholder="请输入密码">
         </label>
         <br>
         <lable>年龄：
@@ -20,6 +23,15 @@
         <br>
         <label>出生年月：
             <input type="date" name="birthday">
+        </label>
+        <br>
+        <label>时间：
+            <input type="time" name="time">
+        </label>
+        <br>
+
+        <label>
+            <input type="datetime-local" name="datetime-local">
         </label>
         <br>
 
@@ -51,12 +63,28 @@
         <input type="file" name="selfie">
         <br>
 
+        提交多个文件：
+        <!-- 注意这里name必须以中括号[]结尾，代表列表 -->
+        <input type="file" name="files[]" multiple>
+        <br>
+
         个性签名：
         <br>
         <textarea name="description" cols="20" rows="10"></textarea>
         <br>
+        
+        <input type="button" value="普通按钮[input]">
+        <br>
+        <button>普通按钮[button]</button>
+        <!-- 比input按钮要好，因为button可以设置image
+            <button><img src="/path/to/image" alt="30"></button>
+        -->
+        <br>
 
         <input type="submit" value="提交">
+        <br>
+
+        <input type="reset" value="重置表单内容">
     </form>
 </body>
 </html>

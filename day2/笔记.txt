@@ -15,3 +15,27 @@
 注册表单标签
 是html最重要的标签之一，主要提供了输入框或按钮等标签，提供给用户进行交互输入数据。
 将来表单可以提交到指定服务端程序中，进行数据处理。
+
+form标签属性：
+- action：设置数据处理的url地址，默认是当前url地址
+- method：设置当前的http提供方式，默认是get
+    get：以【查询字符串】的格式，把表单数据附加在url地址栏上提交数据
+    post：以【数据包】格式，把表单数据附在http网络请求体中提交数据
+- enctype：设置当前表单提交的数据格式，默认值是：application/x-www-form-urlencoded
+    application/x-www-form-urlencoded：以普通表单数据格式提交
+    multipart/form-data：以多种数据格式提交
+    text/plain：以纯文本数据格式提交
+
+常用的表单项：
+- 单行文本框：input type="text"
+- 单行数字、日期、时间、日期时间框：input type="balabala"
+- 密码框：input type="password"
+- 隐藏输入框：input hidden，作用是附带一些默认数据提交给服务端，但是不希望用户看到
+
+表单项的常用属性：
+- * name：表示当前表单项的变量名，用于提供服务端获取本次表单提交的数据项
+- * value：表示当前表单项的值，如果值在我们的代码中提前设置了，则为默认值
+- * type：表示input框的类型
+- disable：布尔属性，设置当前输入框是否被禁用
+- maxlength：设置当前输入框[textarea,input]中输入内容的最大长度
+- multiple：设置允许文件上传框选择多个文件
