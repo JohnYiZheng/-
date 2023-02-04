@@ -1,0 +1,12 @@
+所谓的超文本，就是超出文本范畴的文档。所以我们在网页的编写过程中，经常也需要在网页中展示
+或播放一些媒体资源，例如：图片、音频、视频。
+
+标签                       常见格式                              描述
+<img src="" alt="">       png jpg/jpeg gif svg webp tiff       图片
+
+<audio controls autoplay> mp3 mpeg ogg wma aac ogv             音频
+<source src="" type="">
+</audio>
+
+<video width="" controls autoplay src=""></video>
+                          mp4 mpeg ogg ogv mov flv             视频
