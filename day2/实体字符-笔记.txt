@@ -1,0 +1,3 @@
+在html中，标签本身占用了一些特殊符号，而且html中是不识别空格的，如果我们在网页中需要展示特殊符号或空格，
+就需要用到实体字符(character entities)
+https://www.w3school.com.cn/html/html_entities.asp
